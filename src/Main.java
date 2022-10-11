@@ -140,7 +140,7 @@ public class Main extends JPanel
                             {
                                 intersectionX = RayCastCalc.intersectionX(player.pos_x,player.pos_y,ray_end_x,ray_end_y,map.map_Translator_x(x,screen_size_x),map.map_Translator_y(y,screen_size_y),map.square_size,player.rayLength);
                                 intersectionY = RayCastCalc.intersectionY(player.pos_x,player.pos_y,ray_end_x,ray_end_y,map.map_Translator_x(x,screen_size_x),map.map_Translator_y(y,screen_size_y),map.square_size,player.rayLength);
-                                g.drawLine((int) player.pos_x, (int) player.pos_y, (int) intersectionX, (int) intersectionY);
+                                g.drawLine((int) player.pos_x, (int) player.pos_y, (int) ray_end_x, (int) ray_end_y);
 
                             }
                         }
